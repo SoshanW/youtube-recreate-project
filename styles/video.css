@@ -1,13 +1,14 @@
-.thumbnail{
-  width: 100%;
-  border-radius: 10px;
-}
-
 .video-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  margin-right: 20px;
+}
+
+.thumbnail{
+  width: 100%;
+  border-radius: 10px;
 }
 
 .video-title{
@@ -41,6 +42,7 @@
 }
 
 .thumbnail-row{
+  position: relative;
   margin-bottom: 12px;
 }
 
@@ -53,3 +55,15 @@
   margin-bottom: 2px;
 }
 
+.video-time{
+  font-family: Roboto, Arial;
+  position: absolute;
+  padding: 4px 2px 4px 2px;
+  background-color: black;
+  color: white;
+  bottom: 10px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+}
