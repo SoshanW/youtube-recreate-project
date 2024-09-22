@@ -47,8 +47,6 @@
   display: flex;
   height: 39px;
   width: 66px;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(243, 243, 243);
   border-width: 1px;
   border-style: solid;
@@ -67,8 +65,6 @@
   width: 40px;
   border-radius: 20px;
   border: none;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(246, 246, 246);
 }
 
@@ -134,4 +130,43 @@
 .current-user-picture{
   height: 32px;
   border-radius: 16px;
+}
+
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container{
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip{
+  font-family: Roboto, Arial;
+  position:absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+  opacity: 1;
 }
