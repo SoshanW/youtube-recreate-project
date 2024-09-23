@@ -28,10 +28,12 @@
   height: 24px;
   margin-left: 24px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .youtube-logo{
   height: 20px;
+  cursor: pointer;
 }
 
 .middle-section{
@@ -128,6 +130,7 @@
 .current-user-picture{
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .search-button, 

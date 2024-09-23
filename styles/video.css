@@ -36,6 +36,11 @@
   margin-bottom: 10px;
 }
 
+.video-info-grid a{
+  text-decoration: none;
+  color: black;
+}
+
 /* .video-preview{
 } */
 
@@ -49,8 +54,8 @@
 }
 
 
-/* .video-info{
-} */
+.video-info{
+} 
 
 .profile-picture{
   width: 36px;
